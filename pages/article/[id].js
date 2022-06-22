@@ -1,6 +1,8 @@
-import { server } from "../../../config";
+import Meta from "../../components/Meta";
+import { server } from "../../config";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 function article({ article }) {
   // const router = useRouter();
   // const { id } = router.query;
@@ -10,6 +12,7 @@ function article({ article }) {
 
   return (
     <>
+      <Meta title={article.title} />
       <h1>{article.title}</h1>
       <p>{article.body}</p>
       <br />
