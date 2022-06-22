@@ -1,14 +1,15 @@
 import Head from "next/head";
+import ActicleList from "../components/ArticleList";
 
 export default function Home({ articles }) {
-  console.log(articles);
   return (
     <div>
       <Head>
         <title>WebDev Newz</title>
         <meta name="keywords" content="web development, programming" />
       </Head>
-      <h1>Welcom to NextJS</h1>
+
+      <ActicleList articles={articles} />
     </div>
   );
 }
