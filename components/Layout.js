@@ -1,4 +1,5 @@
 import Nav from "./Nav";
+import Header from "./Header";
 import styles from "../styles/Layout.module.css";
 
 function Layout({ children }) {
@@ -7,7 +8,7 @@ function Layout({ children }) {
       <Nav />
       <div className={styles.container}>
         <main className={styles.main}>
-          <h1>Hello</h1>
+          <Header />
           {children}
         </main>
       </div>
